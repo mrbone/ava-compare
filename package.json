@@ -1,0 +1,16 @@
+{
+  "name": "ava-compare",
+  "version": "0.0.1",
+  "description": "Compare ava test speed between other popular test framwork.",
+  "main": "index.js",
+  "repository": "git@github.com:mrbone/ava-compare.git",
+  "author": "mrbone <sgbfire@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "ava": "^0.18.2",
+    "mocha": "^3.2.0"
+  }
+}
