@@ -6,11 +6,19 @@
   "repository": "git@github.com:mrbone/ava-compare.git",
   "author": "mrbone <sgbfire@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "ava": "ava",
+    "ava:sync":"ava test/ava/avaSync.js",
+    "ava:async":"ava test/ava/avaAsync.js",
+    "mocha:sync":"mocha test/mocha/mochaSync.js --reporter dot",
+    "mocha:async":"mocha test/mocha/mochaAsync.js --reporter dot"
+  },
   "dependencies": {
     "lodash": "^4.17.4"
   },
   "devDependencies": {
     "ava": "^0.18.2",
+    "chai": "^3.5.0",
     "mocha": "^3.2.0"
   }
 }
