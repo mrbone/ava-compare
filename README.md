@@ -1,11 +1,6 @@
 # ava-compare
 
 ---
-
-## setup
-
-    npm install
----
 We run single assertion for 1000 times per each framework.
 
 ## Mocha
@@ -26,8 +21,17 @@ We run single assertion for 1000 times per each framework.
     npm run ava:async
     output: 294ms
 
+## Jest
+
+    npm run jest:sync
+    output: 1.406s
+    
+    npm run jest:async
+    output: 104.334s
 ---
 
 ## Conclusion
 
-As we can see ava is much faster than mocha.Even in sync and async way.
+As we can see Ava is much faster than Mocha/Jest.
+
+Especially in Async test case, Jest and mocha always run in serial, so it last minutes, but ava run all the async case in parallel. So it much faster.
