@@ -1,6 +1,6 @@
 const _ = require('lodash');
 const chai = require('chai');
-const times = require('../utils/argvOptions').times;
+const times = require('../utils/config').times;
 
 console.time('mocha sync');
 var i = 0;

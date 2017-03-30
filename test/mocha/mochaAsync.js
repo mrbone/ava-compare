@@ -1,9 +1,8 @@
 const expect = require('chai').expect;
 const _ = require('lodash');
-const times = require('../utils/argvOptions').times;
+const times = require('../utils/config').times;
 
 var i = 0;
-
 
 console.time('mocha async');
 
