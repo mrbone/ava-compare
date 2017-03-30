@@ -8,14 +8,17 @@
   "license": "MIT",
   "scripts": {
     "ava": "ava",
-    "mocha":"mocha",
+    "mocha": "mocha",
+    "jest": "jest",
     "ava:sync": "ava test/ava/avaSync.js",
     "ava:async": "ava test/ava/avaAsync.js",
     "mocha:sync": "mocha test/mocha/mochaSync.js --reporter dot",
-    "mocha:async": "mocha test/mocha/mochaAsync.js --reporter dot"
+    "mocha:async": "mocha test/mocha/mochaAsync.js --reporter dot",
+    "jest:sync": "jest test/jest/sync.test.js",
+    "jest:async": "jest test/jest/async.test.js"
   },
-  "ava":{
-    "files":[
+  "ava": {
+    "files": [
       "test/ava/"
     ]
   },
@@ -25,6 +28,7 @@
   "devDependencies": {
     "ava": "^0.18.2",
     "chai": "^3.5.0",
+    "jest": "^19.0.2",
     "mocha": "^3.2.0",
     "yargs": "^7.0.2"
   }
