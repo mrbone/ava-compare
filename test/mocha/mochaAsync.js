@@ -1,10 +1,13 @@
 const expect = require('chai').expect;
 const _ = require('lodash');
+const times = require('../utils/argvOptions').times;
 
 var i = 0;
+
+
 console.time('mocha async');
 
-_.times(15, () => {
+_.times(times, () => {
   describe('some async function', () => {
     it('async test', () => {
       return new Promise((resolve) => {
@@ -12,7 +15,7 @@ _.times(15, () => {
           expect('a').to.equal('a');
           resolve();
           i++;
-          i === 15   && console.timeEnd('mocha async');
+          i === times && console.timeEnd('mocha async');
         }, 100);
       })
     });
