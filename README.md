@@ -7,12 +7,12 @@ In this project we only run single assertion for 1000 times per each framework.
 
 ## Mocha
 
-    npm run mocha:sync -- --times=1000
+    npm run mocha:sync
 
     output: 454ms
 
 
-    npm run mocha:async -- --times=1000
+    npm run mocha:async 
     output: 2m
 
 ## Ava
